@@ -1,81 +1,96 @@
-# Yash-1202
-My first website with login from 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>M YASH Channel</title>
     <style>
-        /* This is CSS for styling the page */
+        /* Basic styling for the page */
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f2f5;
+            background-color: #1a1a1a; /* Dark background */
+            color: #ffffff;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .login-container {
-            background-color: #ffffff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-        .login-container h2 {
+
+        /* Main container for the content */
+        .container {
             text-align: center;
-            color: #333;
-            margin-bottom: 1.5rem;
+            background-color: #282828;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
         }
-        .form-group {
-            margin-bottom: 1rem;
+
+        /* Style for your logo */
+        .logo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%; /* Makes the image circular */
+            margin-bottom: 25px;
+            border: 3px solid #00bfff; /* Adds a tech-blue border */
         }
-        .form-group label {
-            display: block;
-            margin-bottom: 0.5rem;
-            color: #555;
-        }
-        .form-group input {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-sizing: border-box; /* Important for padding to work right */
-        }
-        .submit-btn {
-            width: 100%;
-            padding: 0.75rem;
-            border: none;
-            border-radius: 4px;
-            background-color: #007bff;
-            color: white;
-            font-size: 1rem;
+
+        /* Style for the buttons */
+        .btn {
+            display: block; /* Makes buttons stack vertically */
+            width: 250px;
+            padding: 15px 20px;
+            margin: 15px auto; /* Centered with space */
+            font-size: 18px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #ffffff;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.2s, background-color 0.2s;
             cursor: pointer;
         }
-        .submit-btn:hover {
-            background-color: #0056b3;
+
+        /* Subscribe Button (YouTube Red) */
+        .subscribe-btn {
+            background-color: #c00;
+        }
+
+        /* Channel Link Button (Dark/Grey) */
+        .channel-btn {
+            background-color: #444;
+        }
+
+        /* Hover effect for buttons */
+        .btn:hover {
+            transform: scale(1.05); /* Slightly enlarges the button */
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
-    
-    <div class="login-container">
-        <h2>Login</h2>
-        <form action="#" method="get">
-            <div class="form-group">
-                <label for="username">Name:</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit" class="submit-btn">Submit</button>
-        </form>
+
+    <div class="container">
+        
+        <img src="1000017492.jpg" alt="M YASH Channel Logo" class="logo">
+        
+        <h1>M YASH</h1>
+        
+        <a href="https://youtube.com/@yashmachhi-w5c?sub_confirmation=1" 
+           target="_blank" 
+           class="btn subscribe-btn">
+           Subscribe
+        </a>
+        
+        <a href="https://youtube.com/@yashmachhi-w5c?si=opo_JW1PEXeEM9Da" 
+           target="_blank" 
+           class="btn channel-btn">
+           Visit YouTube Channel
+        </a>
+        
     </div>
 
 </body>
 </html>
-
